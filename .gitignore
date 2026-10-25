@@ -1,0 +1,13 @@
+# Build artifacts (lab makefile outputs)
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+build/
+
+# Editor / temp
+*.bak
+*~
+.vscode/
