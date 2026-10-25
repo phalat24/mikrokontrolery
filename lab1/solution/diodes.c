@@ -9,7 +9,7 @@ void set_diode_state(uint8_t diode_pin, GPIO_TypeDef *diode_port, diode_operatio
     }
     else
     {
-        uint8_t shift = ((is_low_on != 0) != (operation == OFF)) ? SHIFT_HIGH : SHIFT_LOW;
+        uint8_t shift = ((is_low_on != 0) != (operation == OFF)) ? SHIFT_LOW : SHIFT_HIGH;
         diode_port->BSRR = 1U << (diode_pin + shift);
     }
 }

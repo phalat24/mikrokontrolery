@@ -33,7 +33,7 @@ int main(void)
     GPIOafConfigure(GPIOA, 3U, GPIO_OType_PP, GPIO_High_Speed, GPIO_PuPd_UP, 7U);
     USART2->BRR = 0x0683U;
     USART2->CR1 = USART_CR1_RE | USART_CR1_TE | USART_CR1_UE;
-
+    
     GPIOinConfigure(GPIOC, BUTTON_USER_PIN, GPIO_PuPd_UP, EXTI_Mode_Disable, EXTI_Trigger_Irrelevant);
     GPIOinConfigure(GPIOB, BUTTON_LEFT_PIN, GPIO_PuPd_UP, EXTI_Mode_Disable, EXTI_Trigger_Irrelevant);
     GPIOinConfigure(GPIOB, BUTTON_RIGHT_PIN, GPIO_PuPd_UP, EXTI_Mode_Disable, EXTI_Trigger_Irrelevant);
